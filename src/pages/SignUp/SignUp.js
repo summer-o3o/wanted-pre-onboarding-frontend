@@ -38,7 +38,7 @@ const SignUp = () => {
   };
 
   return (
-    <div className="sign_in">
+    <div className="sign_up">
       <h1 className="tit_wanted">
         <svg width="120" viewBox="0 0 140 32" aria-label="원티드">
           <path
