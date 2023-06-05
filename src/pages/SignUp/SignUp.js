@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './SignUp.scss';
 import TitleAccount from '../../components/TitleAccount/TitleAccount';
 import WrapInp from '../../components/WrapInp/WrapInp';
 import BtnAccount from '../../components/BtnAccount/BtnAccount';
 import LinkAccount from '../../components/LinkAccount/LinkAccount';
+import './SignUp.scss';
 
 const SignUp = () => {
   const [account, setAccount] = useState({
