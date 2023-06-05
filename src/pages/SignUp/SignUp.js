@@ -31,14 +31,23 @@ const SignUp = () => {
   const handleSubmit = e => {
     e.preventDefault();
 
-    alert('회원가입 완료');
-    // 서브밋 완료시 value값 비움
-    setAccount({
-      email: '',
-      password: '',
+    fetch('https://www.pre-onboarding-selection-task.shop/auth/signup', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json', //필수로 넣어야함
+      },
+      body: JSON.stringify({
+        email: account.email,
+        password: account.password,
+      }),
+    }).then(() => {
+      alert('회원가입 완료');
+      setAccount({
+        email: '',
+        password: '',
+      });
+      // navigate('/signin');
     });
-
-    navigate('/signin');
   };
 
   return (
