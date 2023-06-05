@@ -1,0 +1,21 @@
+.sign_up {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 650px;
+  height: 100vh;
+  margin: 0 auto;
+
+  .tit_wanted {
+    margin: 0 auto 40px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+  }
+
+  .form_sign {
+    padding: 35px 60px 50px;
+    border: 1px solid #dedede;
+    border-radius: 5px;
+  }
+}
