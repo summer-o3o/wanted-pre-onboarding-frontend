@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import './SignUp.scss';
+import TitleAccount from '../../components/TitleAccount/TitleAccount';
+import WrapInp from '../../components/WrapInp/WrapInp';
+import BtnAccount from '../../components/BtnAccount/BtnAccount';
+import LinkAccount from '../../components/LinkAccount/LinkAccount';
 
 const SignUp = () => {
   const [account, setAccount] = useState({
@@ -54,51 +58,40 @@ const SignUp = () => {
         className="form_sign"
         onSubmit={handleSubmit}
       >
-        <strong className="tit_sign">가입을 시작합니다!</strong>
-        <p className="desc_sign">다양한 서비스를 편리하게 이용해 보세요.</p>
+        <TitleAccount
+          title="가입을 시작합니다!"
+          desc="다양한 서비스를 편리하게 이용해 보세요."
+        />
         <fieldset>
           <legend className="screen_out">회원가입</legend>
-          <div className={`wrap_inp ${getEmailInputClass()}`}>
-            {/* 유효성 검사에 맞지 않을시 wrap_inp에 클래스 type_error 추가 */}
-            <input
-              className="inp_email"
-              type="text"
-              data-testid="email-input"
-              placeholder="이메일을 입력해주세요."
-              name="email"
-              onChange={handleUserAuthentication}
-              value={account.email}
-            />
-            <p className="desc_error">
-              이메일 형식이 아닙니다. 올바른 이메일 주소를 입력해주세요
-            </p>
-          </div>
-          <div className={`wrap_inp ${getPasswordInputClass()}`}>
-            {/* 유효성 검사에 맞지 않을시 wrap_inp에 클래스 type_error 추가 */}
-            <input
-              className="inp_password"
-              type="password"
-              data-testid="password-input"
-              placeholder="비밀번호 입력해주세요."
-              name="password"
-              onChange={handleUserAuthentication}
-              value={account.password}
-            />
-            <p className="desc_error">
-              비밀번호의 경우 8자 이상을 입력해주세요
-            </p>
-          </div>
-          <button
-            className="btn_sign"
-            type="submit"
-            data-testid="signup-button"
+          <WrapInp
+            typeError={getEmailInputClass()}
+            inpClass="inp_email"
+            type="text"
+            dataTestId="email-input"
+            placeholder="이메일을 입력해주세요."
+            inpName="email"
+            errorMsg="이메일 형식이 아닙니다. 올바른 이메일 주소를 입력해주세요"
+            onChange={handleUserAuthentication}
+            value={account.email}
+          />
+          <WrapInp
+            typeError={getPasswordInputClass()}
+            inpClass="inp_password"
+            type="password"
+            dataTestId="password-input"
+            placeholder="비밀번호 입력해주세요."
+            inpName="password"
+            errorMsg="비밀번호의 경우 8자 이상을 입력해주세요"
+            onChange={handleUserAuthentication}
+            value={account.password}
+          />
+          <BtnAccount
+            text="회원가입"
+            dataTestId="signup-button"
             disabled={getEmailInputClass() || getPasswordInputClass()}
-          >
-            회원가입
-          </button>
-          <Link to="/signup" className="link_g">
-            이미 회원이라면?
-          </Link>
+          />
+          <LinkAccount to="/signin" text="이미 회원이라면?" />
         </fieldset>
       </form>
     </div>
