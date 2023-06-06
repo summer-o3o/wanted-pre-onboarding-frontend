@@ -1,0 +1,92 @@
+.todo {
+  width: 650px;
+  margin: 50px auto 0;
+
+  .form_todo {
+    position: relative;
+    margin-top: 50px;
+  }
+
+  .inp_todo {
+    box-sizing: border-box;
+    width: 100%;
+    height: 70px;
+    padding: 10px 150px 10px 20px;
+    border: 0;
+    border-bottom: 1px solid #dedede;
+    font-size: 20px;
+    line-height: 50px;
+
+    &::placeholder {
+      font-size: 20px;
+      line-height: 50px;
+    }
+  }
+
+  .btn_add {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 100px;
+    border-radius: 10px;
+    background-image: linear-gradient(
+      90deg,
+      #01a9fe -12%,
+      #2f5fef 37%,
+      #046afe 72%,
+      #00d2dd 110%
+    );
+    color: #fff;
+    font-size: 17px;
+    line-height: 50px;
+  }
+
+  .list_todo {
+    padding-top: 30px;
+
+    li {
+      position: relative;
+      margin: 30px 0;
+      padding: 15px 0;
+    }
+
+    .lnp_todo {
+      display: flex;
+      align-items: center;
+    }
+
+    .check_todo {
+      margin-right: 7px;
+      zoom: 2;
+    }
+
+    .txt_todo {
+      display: block;
+      padding-right: 150px;
+      overflow: hidden;
+      color: #222;
+      font-size: 20px;
+      line-height: 30px;
+      text-overflow: ellipsis;
+      word-break: break-all;
+      white-space: nowrap;
+    }
+
+    .wrap_btn {
+      position: absolute;
+      top: 11px;
+      right: 0;
+      margin-left: auto;
+    }
+
+    [class*='btn_'] {
+      width: 60px;
+      height: 35px;
+      margin-left: 7px;
+      border: 1px solid #dedede;
+      border-radius: 7px;
+      color: #555;
+      font-size: 14px;
+    }
+  }
+}
