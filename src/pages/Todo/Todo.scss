@@ -42,7 +42,10 @@
   }
 
   .list_todo {
-    padding-top: 30px;
+    margin-top: 50px;
+    padding: 10px 45px;
+    border-radius: 15px;
+    background-color: #fbfbfb;
 
     li {
       position: relative;
@@ -85,6 +88,7 @@
       margin-left: 7px;
       border: 1px solid #dedede;
       border-radius: 7px;
+      background-color: #fff;
       color: #555;
       font-size: 14px;
     }
