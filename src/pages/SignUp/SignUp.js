@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import TitleAccount from '../../components/TitleAccount/TitleAccount';
+import Title from '../../components/Title/Title';
 import WrapInp from '../../components/WrapInp/WrapInp';
 import BtnAccount from '../../components/BtnAccount/BtnAccount';
 import LinkAccount from '../../components/LinkAccount/LinkAccount';
@@ -85,7 +85,7 @@ const SignUp = () => {
         className="form_sign"
         onSubmit={handleSubmit}
       >
-        <TitleAccount
+        <Title
           title="가입을 시작합니다!"
           desc="다양한 서비스를 편리하게 이용해 보세요."
         />
