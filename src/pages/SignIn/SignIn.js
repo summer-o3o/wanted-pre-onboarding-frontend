@@ -7,6 +7,8 @@ import LinkAccount from '../../components/LinkAccount/LinkAccount';
 import './SignIn.scss';
 
 const SignIn = () => {
+  const navigate = useNavigate();
+
   useEffect(() => {
     const token = localStorage.getItem('token');
 
@@ -20,7 +22,6 @@ const SignIn = () => {
     email: '',
     password: '',
   });
-  const navigate = useNavigate();
 
   const handleUserAuthentication = e => {
     setAccount({
