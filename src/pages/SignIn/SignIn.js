@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import TitleAccount from '../../components/TitleAccount/TitleAccount';
 import WrapInp from '../../components/WrapInp/WrapInp';
@@ -7,6 +7,15 @@ import LinkAccount from '../../components/LinkAccount/LinkAccount';
 import './SignIn.scss';
 
 const SignIn = () => {
+  useEffect(() => {
+    const token = localStorage.getItem('token');
+
+    if (token) {
+      alert('이미 로그인된 상태입니다. todo페이지로 이동합니다');
+      navigate('/todo');
+    }
+  }, []);
+
   const [account, setAccount] = useState({
     email: '',
     password: '',
@@ -31,14 +40,34 @@ const SignIn = () => {
   const handleSubmit = e => {
     e.preventDefault();
 
-    alert('회원가입 완료');
-    // 서브밋 완료시 value값 비움
-    setAccount({
-      email: '',
-      password: '',
-    });
-
-    navigate('/signin');
+    fetch('https://www.pre-onboarding-selection-task.shop/auth/signin', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json', //필수로 넣어야함
+      },
+      body: JSON.stringify({
+        email: account.email,
+        password: account.password,
+      }),
+    })
+      .then(response => response.json())
+      .then(data => {
+        if (data.statusCode === 401) {
+          alert('회원 정보가 일치하지 않습니다.');
+          setAccount({
+            email: '',
+            password: '',
+          });
+        } else if (data.access_token) {
+          localStorage.setItem('token', data.access_token);
+          alert('로그인 성공');
+          setAccount({
+            email: '',
+            password: '',
+          });
+          navigate('/todo');
+        }
+      });
   };
 
   return (

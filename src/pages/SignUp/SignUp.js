@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import TitleAccount from '../../components/TitleAccount/TitleAccount';
 import WrapInp from '../../components/WrapInp/WrapInp';
@@ -7,6 +7,15 @@ import LinkAccount from '../../components/LinkAccount/LinkAccount';
 import './SignUp.scss';
 
 const SignUp = () => {
+  useEffect(() => {
+    const token = localStorage.getItem('token');
+
+    if (token) {
+      alert('이미 로그인된 상태입니다. todo페이지로 이동합니다');
+      navigate('/todo');
+    }
+  }, []);
+
   const [account, setAccount] = useState({
     email: '',
     password: '',
@@ -40,13 +49,21 @@ const SignUp = () => {
         email: account.email,
         password: account.password,
       }),
-    }).then(() => {
-      alert('회원가입 완료');
-      setAccount({
-        email: '',
-        password: '',
-      });
-      // navigate('/signin');
+    }).then(data => {
+      if (data.status === 400) {
+        alert('동일한 이메일이 이미 존재합니다.');
+        setAccount({
+          email: '',
+          password: '',
+        });
+      } else {
+        alert('회원가입 성공');
+        setAccount({
+          email: '',
+          password: '',
+        });
+        navigate('/signin');
+      }
     });
   };
 
