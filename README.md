@@ -18,11 +18,12 @@
 #### 1️⃣ 레파지토리 링크로 들어가 주세요. [레파지토리 링크 바로가기](https://github.com/summer-o3o/wanted-pre-onboarding-frontend)<br><br>
 
 #### 2️⃣ 우측 상단에 있는 Code 버튼을 눌러주세요.<br>
-<img width="500px" align="center" src="https://github.com/summer-o3o/wanted-pre-onboarding-frontend/assets/89458455/ea217e5a-0f0a-43af-91bd-c2aee743f316" />
+<img width="500px" align="center" src="https://github.com/summer-o3o/wanted-pre-onboarding-frontend/assets/89458455/0838ec5a-a4a3-401d-8566-d63999440b55.png" />
 <br><br>
 
+
 #### 3️⃣ 이미지에 있는 버튼을 눌러 복사를 해주세요.<br>
-<img width="300px" align="center" src="https://github.com/summer-o3o/wanted-pre-onboarding-frontend/assets/89458455/d6677a2d-1fa7-4554-9294-5830b5bf6d78" />
+<img width="300px" align="center" src="https://github.com/summer-o3o/wanted-pre-onboarding-frontend/assets/89458455/754eff8c-150b-4408-bbe5-8f49272f51ff.png" />
 <br><br>
 
 #### 4️⃣ 터미널에 ```git clone``` 복사한 링크를 입력해 주세요.<br><br>
@@ -51,25 +52,24 @@
   <br><br>
 
 ## 회원가입
-<img width="500px" align="center" src="https://github.com/summer-o3o/wanted-pre-onboarding-frontend/assets/89458455/5c49d116-3477-4804-9a22-c5e0e65d6504.GIF"><br>
+<img width="500px" align="center" src="https://github.com/summer-o3o/wanted-pre-onboarding-frontend/assets/89458455/10d97184-38f3-4ed3-8c0d-b2ed5d01aafa.GIF"><br>
 
 - 회원가입시, 이메알과 비밀번호가 조건에 맞지 않으면 에러 문구가 나와요!
 - 이메일 비밀번호가 유효성 검사에 통과되면 버튼이 활성화 돼요!
 - 만약 이미 가입된 이메일 이라면 회원가입을 재시도해주셔야해요. 🥺
   <br><br>
-
+  
 ## 로그인
-<img width="500px" align="center" src="https://github.com/summer-o3o/wanted-pre-onboarding-frontend/assets/89458455/ba0db619-334d-49b2-8f91-03f14fa530b3.GIF"><br>
+<img width="500px" align="center" src="https://github.com/summer-o3o/wanted-pre-onboarding-frontend/assets/89458455/397949c1-7ed0-4fd0-b93d-7734a8515379.GIF"><br>
 
 - 회원가입할때 입력했던 이메일과 비밀번호를 입력하면 로그인이 돼요!
 - 이메일 비밀번호가 유효성 검사에 통과되면 버튼이 활성화 돼요!
 - 만약 입력된 정보가 틀리다면 로그인을 재시도해주셔야해요. 🥺
   <br><br>
 
-
 ### 투두리스트
-<img width="500px" align="center" src="https://github.com/summer-o3o/wanted-pre-onboarding-frontend/assets/89458455/4862d4e3-f44c-47a4-99ac-2dafedf552ae.GIF"><br>
-<img width="500px" align="center" src="https://github.com/summer-o3o/wanted-pre-onboarding-frontend/assets/89458455/86ed4327-f156-4300-9915-8feb37561322.GIF"><br>
+<img width="500px" align="center" src="https://github.com/summer-o3o/wanted-pre-onboarding-frontend/assets/89458455/f342aa55-b952-4d69-aae9-8890f9868819.GIF"><br>
+<img width="500px" align="center" src="https://github.com/summer-o3o/wanted-pre-onboarding-frontend/assets/89458455/dc21a132-05d1-4953-8a82-52ae1eca63a9.GIF"><br>
 
 - 해야할일을 추가 할 수 있어요!
 - 추가된 투두리스트를 수정 및 삭제가 가능해요!
