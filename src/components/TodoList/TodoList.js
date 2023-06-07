@@ -56,9 +56,11 @@ const TodoList = ({ todoList, token, setTodoList, id, todo, isCompleted }) => {
   const handleChecked = () => {
     const updatedIsCompleted = !isChecked;
     setIsChecked(updatedIsCompleted);
-
-    // 체크박스 상태와 함께 업데이트 요청을 서버에 전송
-    handleUpdate(id, todo, updatedIsCompleted);
+    if (modify) {
+      return;
+    } else {
+      handleUpdate(id, todo, updatedIsCompleted);
+    }
   };
 
   const handleModify = () => {
@@ -100,7 +102,9 @@ const TodoList = ({ todoList, token, setTodoList, id, todo, isCompleted }) => {
           type="button"
           data-testid={modify ? 'submit-button' : 'modify-button'}
           onClick={
-            modify ? () => handleUpdate(id, todo) : () => handleModify(id)
+            modify
+              ? () => handleUpdate(id, todo, isChecked)
+              : () => handleModify(id)
           }
         >
           {modify ? '제출' : '수정'}
