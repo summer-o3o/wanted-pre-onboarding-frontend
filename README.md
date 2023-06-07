@@ -51,8 +51,7 @@
   <br><br>
 
 ## 회원가입
-
-![05  회원가입](이미지.GIF)
+<img width="500px" align="center" src="https://github.com/summer-o3o/wanted-pre-onboarding-frontend/assets/89458455/5c49d116-3477-4804-9a22-c5e0e65d6504.GIF"><br>
 
 - 회원가입시, 이메알과 비밀번호가 조건에 맞지 않으면 에러 문구가 나와요!
 - 이메일 비밀번호가 유효성 검사에 통과되면 버튼이 활성화 돼요!
@@ -60,17 +59,17 @@
   <br><br>
 
 ## 로그인
-
-![05  로그인](이미지.GIF)
+<img width="500px" align="center" src="https://github.com/summer-o3o/wanted-pre-onboarding-frontend/assets/89458455/ba0db619-334d-49b2-8f91-03f14fa530b3.GIF"><br>
 
 - 회원가입할때 입력했던 이메일과 비밀번호를 입력하면 로그인이 돼요!
 - 이메일 비밀번호가 유효성 검사에 통과되면 버튼이 활성화 돼요!
 - 만약 입력된 정보가 틀리다면 로그인을 재시도해주셔야해요. 🥺
   <br><br>
 
-### 투두리스트
 
-![03  투두리스트](이미지.GIF)
+### 투두리스트
+<img width="500px" align="center" src="https://github.com/summer-o3o/wanted-pre-onboarding-frontend/assets/89458455/4862d4e3-f44c-47a4-99ac-2dafedf552ae.GIF"><br>
+<img width="500px" align="center" src="https://github.com/summer-o3o/wanted-pre-onboarding-frontend/assets/89458455/86ed4327-f156-4300-9915-8feb37561322.GIF"><br>
 
 - 해야할일을 추가 할 수 있어요!
 - 추가된 투두리스트를 수정 및 삭제가 가능해요!
