@@ -25,7 +25,7 @@
 
   .btn_add {
     position: absolute;
-    top: 5px;
+    top: 10px;
     right: 0;
     width: 100px;
     border-radius: 10px;
@@ -38,7 +38,7 @@
     );
     color: #fff;
     font-size: 17px;
-    line-height: 50px;
+    line-height: 45px;
   }
 
   .list_todo {
@@ -61,6 +61,11 @@
     .check_todo {
       margin-right: 7px;
       zoom: 2;
+
+      &:checked + .txt_todo {
+        color: #888;
+        text-decoration: line-through;
+      }
     }
 
     .txt_todo {
@@ -73,6 +78,30 @@
       text-overflow: ellipsis;
       word-break: break-all;
       white-space: nowrap;
+    }
+
+    .wrap_todolist {
+      display: block;
+      position: relative;
+      flex: 1;
+      margin-right: 150px;
+
+      &::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: -13px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #dedede;
+      }
+    }
+
+    .inp_todolist {
+      border: 0;
+      background-color: transparent;
+      font-size: 20px;
     }
 
     .wrap_btn {
