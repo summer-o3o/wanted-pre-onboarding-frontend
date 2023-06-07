@@ -1,70 +1,136 @@
-# Getting Started with Create React App
+# [원티드 프리온보딩] 원티드 프리온보딩 프론트엔드
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> 본 프로젝트는 2023년 6월 원티드 프리온보딩 프론트엔드 선발 과제입니다.
+> <br>
 
-## Available Scripts
+# 📅 개발 기간 및 인원
 
-In the project directory, you can run:
+- 개발 기간: 2023.06.01 ~ 2023.06.07 (1주)
+- 개발 인원: 김수미
+  <br><br><br>
 
-### `npm start`
+# ❶ 프로젝트 실행 방법
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 프로젝트 실행 방법이 어떻게 되나요?
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<br>
 
-### `npm test`
+1️⃣ 레파지토리 링크로 들어가 주세요. [레파지토리 링크 바로가기](https://github.com/summer-o3o/wanted-pre-onboarding-frontend)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2️⃣ 우측 상단에 있는 Code 버튼을 눌러주세요.
 
-### `npm run build`
+3️⃣ 복사를 해주세요.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4️⃣ 터미널에 git clone 복사한 링크를 입력해 주세요.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+5️⃣ 클론받은 레파지토리로 이동 후 터미널에 npm start를 입력해 주세요.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<br><br>
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<br><br>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# ❷ 서비스 소개
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 원티드 프리온보딩 과제, 어떤 서비스인가요?
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- 내용 추가
+- 내용 추가
+- 내용 추가
+  <br><br>
 
-## Learn More
+## 원티드 프리온보딩, 어떤 기능이 있나요?
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- 내용 추가
+- 내용 추가
+  <br><br>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 회원가입
 
-### Code Splitting
+![05  회원가입](이미지.GIF)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- 내용 추가
+- 내용 추가
+- 내용 추가
+  <br><br>
 
-### Analyzing the Bundle Size
+## 로그인
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![05  로그인](이미지.GIF)
 
-### Making a Progressive Web App
+- 내용 추가
+- 내용 추가
+- 내용 추가
+  <br><br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### 투두리스트
 
-### Advanced Configuration
+![03  투두리스트](이미지.GIF)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- 내용 추가
+- 내용 추가
+- 내용 추가
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<br><br>
 
-### `npm run build` fails to minify
+# ❸ 핵심기술
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 원티드 프리온보딩에서는 어떤 기술을 사용하였을까요?
+
+> React와 Sass를 사용했어요!
+> <br>
+
+- 내용 추가
+- 내용 추가
+
+<br>
+
+---
+
+<br><br>
+
+# ❹ 회고
+
+## 원티드 프리온보딩 프로젝트를 진행하면서 배운점이 있나요?
+
+> 내용 추가
+> <br>
+
+- 내용 추가<br><br>
+
+> 내용 추가
+> <br>
+
+- 내용 추가<br><br>
+
+> 내용 추가
+> <br>
+
+- 내용 추가
+- 내용 추가
+- 내용 추가
+  <br><br>
+
+## 원티드 프리온보딩 프로젝트를 진행하면서 부족한점이 있었있나요?
+
+> 내용 추가
+> <br>
+
+- 내용 추가<br><br>
+
+## 원티드 프리온보딩 프로젝트를 진행하면서 개선하고 싶은점이 있었있나요?
+
+> 내용 추가
+> <br>
+
+- 내용 추가 <br><br>
+
+## 원티드 프리온보딩 프로젝트를 진행하면서 느낀점이 있었있나요?
+
+> 내용 추가
+> <br>
+
+- 내용 추가
