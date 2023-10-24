@@ -1,7 +1,9 @@
 import React from 'react';
+import { TitleTypes } from '../../types/types';
 import './Title.scss';
 
-const Title = ({ title, desc }) => {
+const Title = (props: TitleTypes) => {
+  const { title, desc } = props;
   return (
     <>
       <strong className="tit_g">{title}</strong>

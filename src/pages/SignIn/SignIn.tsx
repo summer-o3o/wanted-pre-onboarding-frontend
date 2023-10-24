@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Title from '../../components/Title/Title';
 import WrapInp from '../../components/WrapInp/WrapInp';
@@ -23,7 +23,7 @@ const SignIn = () => {
     password: '',
   });
 
-  const handleUserAuthentication = e => {
+  const handleUserAuthentication = (e: React.ChangeEvent<HTMLInputElement>) => {
     setAccount({
       ...account, // 객체 복사
       [e.target.name]: e.target.value,
@@ -38,7 +38,7 @@ const SignIn = () => {
     return account.password.length < 8 && 'type_error';
   };
 
-  const handleSubmit = e => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     fetch('https://www.pre-onboarding-selection-task.shop/auth/signin', {
@@ -119,7 +119,9 @@ const SignIn = () => {
           <BtnAccount
             text="로그인"
             dataTestId="signin-button"
-            disabled={getEmailInputClass() || getPasswordInputClass()}
+            disabled={
+              account.email.indexOf('@') === -1 || account.password.length < 8
+            }
           />
           <LinkAccount to="/signup" text="계정이 없다면?" />
         </fieldset>

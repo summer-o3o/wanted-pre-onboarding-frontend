@@ -1,7 +1,9 @@
-import React from 'react';
+import { BtnAccountTypes } from '../../types/types';
 import './BtnAccount.scss';
 
-const BtnAccount = ({ dataTestId, disabled, text }) => {
+const BtnAccount = (props: BtnAccountTypes) => {
+  const { dataTestId, disabled, text } = props;
+
   return (
     <button
       className="btn_account"
