@@ -23,7 +23,7 @@ const SignUp = () => {
     password: '',
   });
 
-  const handleUserAuthentication = e => {
+  const handleUserAuthentication = (e: React.ChangeEvent<HTMLInputElement>) => {
     setAccount({
       ...account, // 객체 복사
       [e.target.name]: e.target.value,
@@ -38,7 +38,7 @@ const SignUp = () => {
     return account.password.length < 8 && 'type_error';
   };
 
-  const handleSubmit = e => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     fetch('https://www.pre-onboarding-selection-task.shop/auth/signup', {
@@ -116,7 +116,9 @@ const SignUp = () => {
           <BtnAccount
             text="회원가입"
             dataTestId="signup-button"
-            disabled={getEmailInputClass() || getPasswordInputClass()}
+            disabled={
+              account.email.indexOf('@') === -1 || account.password.length < 8
+            }
           />
           <LinkAccount to="/signin" text="이미 회원이라면?" />
         </fieldset>
